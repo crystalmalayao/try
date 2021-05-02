@@ -1,0 +1,157 @@
+<!D<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="background">
+		<div class="nav">
+			<a class="a active" href="#">HOME</a>
+			<a class="b"href="#">ABOUT</a>
+			<a class="c"href="#">GALLERY</a>
+			<a class="d"href="#">CONTACT</a>
+		</div>
+
+<div class="content">	
+	<div class="home">
+		<h1> Queen Jonaxx </h1>
+		<h3> Writer </h3>
+	</div>
+
+	<div class="about">
+		<p> <b> Jonaxx: Everything You Need To Know About MPress' Queen J </b><br><br>
+
+		Jonaxx's journey to becoming the queen of Wattpad may have begun as a simple hobby that involved paper, pen, and daydreams, but it has bloomed into a passion not just for her, but also for her fans worldwide. 
+<br><br>
+		With 4.4 million followers on Wattpad, she has surpassed Anna Todd (or imaginator1D, the author of the After series) as the most followed author on the website. Indeed, she has become a force to be reckoned with as her online presence only grew more over time. She even has her own Jonaxx Stories App, which was just launched this year and already has more than half a million downloads on the Google Playstore. Plus, hundreds of thousands of fans follow her various social media accounts.</p>
+
+<br>
+<p>
+	<b>Jonaxx: Reigning Queen of Wattpad</b><br><br>
+Jonaxx is the first Filipino to get her account on Wattpad verified and the first Filipino writer to gain one million followers.
+
+Hailing from Cagayan de Oro, Philippines, Jonaxx, or Jonahmae Pacala, discovered her flair for writing at the young age of 10 years old. But even before that, she knew that she wanted to write. When she was eight years old, she would write dialogues for her dolls, which she would let her friends read. During her elementary years, she was never fond of long novels, but she found herself inexplicably drawn to sad short stories. She was a bored teenager, reading other people's stories on Creative Corner, a section on teen magazine Candy's online forums. This inspired her to write her own stories in 2003, including Shakespeare in Love, Princess in Disguise, Loving Darkness, How to Produce a Prince, Downfall Chronicles, Just That, 24 Signs of Summer, Remembering Summer, Invisible Man, No Perfect Prince, and Chase and Hearts. She eventually found her way to Wattpad in 2012 where she first posted Chase and Hearts, then an ongoing story she was still writing. Today, she may be publishing her stories in her own online app, but she remains still the reigning queen of Wattpad.
+
+Among the many nicknames given to her by her fans, lovingly called "Jonaxx Stories Lovers" or JSLs, are "The Royal Writer," "Queen J" or "Queen Jonaxx," and even "Kween J."
+
+She dabbled in mainstream publishing with Summit Books, specifically in these imprints: Sizzle, Pop Fiction, and Majesty Press or MPress, which is her very own imprint.
+
+Other than writing, Jonaxx enjoys walks on the beach, the summer breeze, city lights, movie dates, coffee and tea, romance, dolls, teddy bears, and rainbow-colored unicorns. Surprisingly, she didn't pursue a degree in creative writing in college. Instead, she chose to study Education. She earned her degree in education from Xavier University-Ateneo de Cagayan and even became a preschool teacher.
+</p>
+
+<br> <p><b>The Birth of Majesty Press</b><br>
+Majesty Press or MPress was made by Jonaxx with Summit Books after seeing the love that her adoring fans have given her over the years. Majesty Press serves as an avenue for her to perfect her craft in the mainstream publishing industry.
+
+MPress publishes the unabridged, uncut versions of her beloved stories-some of which contain new and special content written exclusively for the MPress books imprint.
+
+"Inspired by my published books and the support of my readers, Majesty Press or MPress ang regalo namin sa inyo dahil sa walang sawa ninyong pagsusuporta sa akin," Jonaxx says in her preface to Heartless, the first book published under MPress.
+
+The first book boasted over 400 pages of pure uncut Jonaxx stories, printed on a premium bigger-sized book. She would later publish seven other hefty books under the imprint-with one book going up to over 600 pages.
+</p>
+
+<div class="box">
+		<center>
+		<div class="image">
+			<img src="21.JPG"> 
+		</div>
+		<div class="image">
+			<img src="19.JPG"> 
+		</div>
+		<div class="image">
+			<img src="26.JPG"> 
+		</div>
+		</center>
+
+	</div>
+	</div>
+	<div class="gallery">
+		<div class="image">
+			<span style="--i:1;"><img src="1.JPG"></span>
+			<span style="--i:2;"><img src="4.jpg"> </span>
+			<span style="--i:3;"><img src="6.jpg"> </span>
+			<span style="--i:4;"><img src="10.jpg"> </span>
+			<span style="--i:5;"><img src="14.jpg"> </span>
+			<span style="--i:6;"><img src="9.jpg"> </span>
+			<span style="--i:7;"><img src="24.jpg"> </span>
+			<span style="--i:8;"><img src="capture.jpg"> </span>
+
+			
+
+		</div>		
+	</div>
+
+	<div class="contact">
+		<div class="contactform">
+			<form action="index.html" method="post">
+				<input type="text" name="" class="inputtext" value="First Name">
+				<input type="text" name="" class="inputtext" value="Last Name">
+				<input type="text" name="" class="inputtext" value="Email">
+				<textarea cols="4" rows="6" class="inputmessage">Your Message... </textarea>
+				<input type="button" name="" class="submitbutton" value="Submit">
+			</form>
+		</div>
+	</div>
+
+
+</div>	
+	</div>
+
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("CLICKED");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$about = $('.about'),
+		$gallery = $('.gallery'),
+		$contact = $('.contact');
+
+
+		$a.click(function(){
+			$home.fadeIn();
+			$about.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();
+		});
+
+		$b.click(function(){
+			$about.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();			
+		});
+
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut();
+			$contact.fadeOut();
+		});
+
+		$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut();
+			$gallery.fadeOut();
+		});
+
+	});
+
+
+</script>
+
+
+
+
+</body>
+</html>
